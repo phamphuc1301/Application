@@ -1,0 +1,22 @@
+<label>name:
+  <input [(ngModel)]="hero.name" placeholder="name">
+  <p>Hello : {{hero.name}}</p>
+</label>
+<div class="total">
+<div class="left">
+  
+  <h2>List student</h2>
+  <ul>
+    <li *ngFor ="let hero of heros">
+      <div class="wraper" >
+        <div class="age">{{hero.age}}</div>
+        <div class="name" [class.main] = "hero === heroCopy" (click) = "hello(hero)">{{hero.name}}</div>
+      </div>
+      
+    </li>
+  </ul>
+</div>
+<div class="right">
+<app-hero-detail [hero] = "heroCopy"></app-hero-detail>
+</div>
+</div>
