@@ -1,0 +1,15 @@
+.dashboardContainer {
+    display: flex;
+}
+.loop{
+    width: 100%;
+}
+.wrapper {
+    text-align: center;
+    padding: 30px;
+    margin: 20px;
+    background-color: #e6e1e1;
+}
+.wrapper:hover {
+    background-color:#c8c7ef; 
+}

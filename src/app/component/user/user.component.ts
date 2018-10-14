@@ -12,7 +12,7 @@ export class UserComponent implements OnInit {
 
   hero : UserHeros =  {
     name : 'Pham Van Phuc',
-    age : 10
+    id : 10
   };
 
   heros : UserHeros[];

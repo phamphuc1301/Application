@@ -8,8 +8,12 @@
 </head>
 <body>
   <div class="appcontainer">
-    <app-user></app-user>
-    <app-message></app-message>
+    <h2>Tour of Heros</h2>
+    <nav>
+        <a routerLink="/user">User</a>
+        <a routerLink="/dashboard">DashBoard</a>
+    </nav>
+    <router-outlet></router-outlet>
   </div>
 </body>
 </html>
