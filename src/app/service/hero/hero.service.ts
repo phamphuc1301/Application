@@ -11,5 +11,10 @@ export class HeroService {
     this.messageService.pushMessage('starting get Hero !');
     return of(Mockhero);
   }
+
+  getHero(id:number):Observable<UserHeros> {
+    return of(Mockhero.find(hero => hero.id === id));
+  }
+
   constructor(private messageService : MessageService) { }
 }

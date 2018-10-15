@@ -1,6 +1,6 @@
 <h3>Top of hero</h3>
 <div class="dashboardContainer">
-<div *ngFor="let value of hero" class="loop">
+<div *ngFor="let value of hero" routerLink="/detail/{{value.id}}" class="loop">
   <div class="wrapper">
     <div class="name">{{value.name}}</div>
     <div class="id">{{value.id}}</div>
